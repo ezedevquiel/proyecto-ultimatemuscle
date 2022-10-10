@@ -50,6 +50,12 @@ flex-direction: column;
 align-items: center;
 }
 
+@media (max-width:500px){
+    .header-principal {
+        flex-direction: column;
+    }
+}
+
 /* Estilo del navegador */
 
 
@@ -89,6 +95,9 @@ nav ul li { display: inline-block;
 
   /* Estilo de la sección Instalaciones */
 
+  
+
+
  
   .instalaciones {
 
@@ -120,33 +129,52 @@ nav ul li { display: inline-block;
 
  }
 
+ /* Estilos Planes */
+ .div-planes {
+
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: space-between;
+    
+
+ }
+ 
+
  /* Estilo contacto */
 
- .contenedor {
-    display: grid;
-    grid-template-areas: "facebook facebook facebook"
-    "instagram instagram instagram"
-    "whatsapp whatsapp whatsapp";
-    grid-template-rows: 1fr 1fr 1fr ;
+  .contenedor {
+    height: 100vh;
+    display:grid;
+    grid-template-areas: 
+    "facebook instagram whatsapp"
+    "facebook instagram whatsapp"
+    "facebook instagram whatsapp" ;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+  
+
+   
 
  }
 
  .facebook {
     grid-area: facebook;
     background-color: blueviolet;
+    text-align: center;
 
  }
  .instagram {
     grid-area: instagram;
     background-color: aqua;
+    text-align: center;
 
  }
 
  .whatsapp {
     grid-area: whatsapp;
     background-color: salmon;
+    text-align: center;
 
  }
 
