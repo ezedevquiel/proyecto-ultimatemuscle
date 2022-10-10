@@ -106,6 +106,50 @@ nav ul li { display: inline-block;
     margin: 20px;
  }
 
+ /* Estilo sección profesores */
+ 
+ #profes {
+    color: rgba(0, 0, 0, 0.959);
+    background-color: rgba(255, 255, 255, 0.93);
+    border: solid;
+    border-radius: 20px;
+    border-color: rgb(55, 3, 55);
+    margin: 100px 400px 100px 20px;
+
+    padding: 10px 100px 10px 10px ;
+
+ }
+
+ /* Estilo contacto */
+
+ .contenedor {
+    display: grid;
+    grid-template-areas: "facebook facebook facebook"
+    "instagram instagram instagram"
+    "whatsapp whatsapp whatsapp";
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+ }
+
+ .facebook {
+    grid-area: facebook;
+    background-color: blueviolet;
+
+ }
+ .instagram {
+    grid-area: instagram;
+    background-color: aqua;
+
+ }
+
+ .whatsapp {
+    grid-area: whatsapp;
+    background-color: salmon;
+
+ }
+
  /* Estilo Sección inscripción */
 
  #formulario {
