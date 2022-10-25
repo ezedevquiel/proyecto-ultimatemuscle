@@ -110,6 +110,13 @@ nav ul li { display: inline-block;
     font-weight: 20px;
     margin: 20px;
  }
+ .slide {
+   margin: 15px;
+ }
+ .slide img {
+   height: 70vh;
+   width: 70vh;
+ }
 
  /* Estilo sección profesores */
  
