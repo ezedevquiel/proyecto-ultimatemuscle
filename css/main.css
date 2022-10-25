@@ -50,11 +50,7 @@ flex-direction: column;
 align-items: center;
 }
 
-@media (max-width:500px){
-    .header-principal {
-        flex-direction: column;
-    }
-}
+
 
 /* Estilo del navegador */
 
@@ -118,12 +114,13 @@ nav ul li { display: inline-block;
  /* Estilo sección profesores */
  
  #profes {
-    color: rgba(0, 0, 0, 0.959);
-    background-color: rgba(255, 255, 255, 0.93);
+    color: rgba(255, 255, 255, 0.959);
+    background-color: rgba(0, 0, 0, 0.93);
     border: solid;
     border-radius: 20px;
-    border-color: rgb(55, 3, 55);
+    border-color: rgb(255, 255, 255);
     margin: 100px 400px 100px 20px;
+    
 
     padding: 10px 100px 10px 10px ;
 
@@ -136,44 +133,52 @@ nav ul li { display: inline-block;
     flex-direction: row;
     margin: 50px;
     justify-content: space-between;
-    
 
+ }
+
+ .card {
+   color: rgba(255, 255, 255, 0.959);
+   background-color: black;
+   border: solid;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
  }
  
 
  /* Estilo contacto */
 
   .contenedor {
-    height: 100vh;
+    height: 400px;
     display:grid;
     grid-template-areas: 
-    "facebook instagram whatsapp"
     "facebook instagram whatsapp"
     "facebook instagram whatsapp" ;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-  
-
    
+
 
  }
 
  .facebook {
     grid-area: facebook;
-    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     text-align: center;
 
  }
  .instagram {
     grid-area: instagram;
-    background-color: aqua;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     text-align: center;
 
  }
 
  .whatsapp {
     grid-area: whatsapp;
-    background-color: salmon;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     text-align: center;
 
  }
@@ -182,12 +187,12 @@ nav ul li { display: inline-block;
 
  #formulario {
 
-    color: rgba(0, 0, 0, 0.959);
-    background-color: rgba(255, 255, 255, 0.93);
+    color: rgba(255, 255, 255, 0.959);
+    background-color: rgba(0, 0, 0, 0.93);
     border: solid;
     border-radius: 20px;
-    border-color: rgb(55, 3, 55);
-    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
     margin:0px 450px 0px 50px;
     padding: 50px 20px;
 }
@@ -196,4 +201,22 @@ nav ul li { display: inline-block;
 
 #h3-form {
     color: white;
+}
+
+/* Footer */
+footer {
+   height: 150px;
+   color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+   margin-top: 150px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+
+.footer-6 {
+   margin-top: 300px;
 }
